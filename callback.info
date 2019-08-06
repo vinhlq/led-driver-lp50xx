@@ -1,0 +1,88 @@
+#include PLATFORM_HEADER
+
+/** @brief Capsense Button Pressing
+ *
+ * This callback is called when a Capsense Button Pressing.
+ *
+ * @param buttonMask Button mask bit. 
+ */
+void halCapSenseButtonPressingCallback(uint16_t buttonMask)
+{
+}
+
+/** @brief Capsense Reading Button Pressed Short
+ *
+ * This callback is called when a Capsense Button Pressed Short.
+ *
+ * @param buttonMask Button mask bit. 
+ * @param timePressedMs Amount of time button 0 was pressed.
+ * The API fills the LSB with the first byte read from the device, and the 
+ * MSB with the second byte.
+ * The value can be between 0 – 65535.
+ */
+void halCapSenseButtonPressedShortCallback(uint16_t buttonMask, uint16_t timePressedMs)
+{
+}
+
+/** @brief Capsense Reading Button Pressed Long.
+ *
+ * This callback is called when a Capsense Button Pressed Long.
+ *
+ * @param buttonMask Button mask bit. 
+ * @param timePressedMs Amount of time button 0 was pressed.
+ * The API fills the LSB with the first byte read from the device, and the 
+ * MSB with the second byte.
+ * The value can be between 0 – 65535.
+ */
+void halCapSenseButtonPressedLongCallback(uint16_t buttonMask, uint16_t timePressedMs)
+{
+}
+
+/** @brief Capsense Proximity Change
+ *
+ * This callback is called when a Capsense Proximity Change.
+ *
+ * @param proxStatus The 1-byte buffer to be updated with the value read from the device. 
+ * The API fills the LSB with the first byte read from the device, and the 
+ * MSB with the second byte.
+ * The value can be between 0 – 65535.
+ */
+void halCapSenseProximityChangeCallback(uint8_t proxStatus)
+{
+}
+
+/** @brief Capsense Slider1 Change
+ *
+ * This callback is called when a Capsense Slider1 Change.
+ *
+ * @param slider1Position The 1-byte buffer to be updated with the value read from the device. 
+ * The API fills the LSB with the first byte read from the device, and the 
+ * MSB with the second byte.
+ * The value can be between 0 – 65535.
+ */
+void halCapSenseSlider1ChangeCallback(uint8_t slider1Position)
+{
+}
+
+/** @brief Capsense Slider2 Change
+ *
+ * This callback is called when a Capsense Slider2 Change.
+ *
+ * @param slider2Position The 1-byte buffer to be updated with the value read from the device. 
+ * The API fills the LSB with the first byte read from the device, and the 
+ * MSB with the second byte.
+ * The value can be between 0 – 65535.
+ */
+void halCapSenseSlider2ChangeCallback(uint8_t slider2Position)
+{
+}
+ 
+/** @brief Capsense Init
+ *
+ * This callback is called when a Capsense Init.
+ *
+ * @param err
+ */
+void halCapSenseInitCompleteCallback(uint8_t err)
+{
+}
