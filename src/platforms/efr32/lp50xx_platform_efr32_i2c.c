@@ -116,6 +116,7 @@ uint8_t lp50xxPlatformWriteToRegister(uint8_t deviceAddr,
 
   halInternalResetWatchDog();
 
+  deviceAddr <<= 1;
   if (I2C_DRIVER_ERR_NONE
 	  != halI2cWriteBytes(deviceAddr, writeBuffer, sizeof(writeBuffer))) {
 	return HAL_LED_DRIVER_LP50XX_ERR_COMMMUICATION;
@@ -158,6 +159,7 @@ uint8_t lp50xxPlatformReadFromRegister(uint8_t deviceAddr,
 
   halInternalResetWatchDog();
 
+  deviceAddr <<= 1;
   if (I2C_DRIVER_ERR_NONE
 	  != halI2cWriteBytes(deviceAddr, &localAddress, sizeof(localAddress))) {
 	return HAL_LED_DRIVER_LP50XX_ERR_COMMMUICATION;
