@@ -121,6 +121,7 @@ bool halLedDriverLp50xxBankLedColorSet(uint8_t bankAddr, uint8_t ledNumber, uint
 bool halLedDriverLp50xxBankLedBrightnessSet(uint8_t bankAddr, uint8_t ledNumber, uint8_t brightness);
 #define halLedDriverLp50xxLedBrightnessSet(ledNumber, brightness)	halLedDriverLp50xxBankLedBrightnessSet(LED_DRIVER_LP50XX_SLAVE_ADDRESS_INDEPENDENT, ledNumber, brightness)
 
+
 //*****************************************************************************
 //
 // Mark the end of the C bindings section for C++ compilers.
